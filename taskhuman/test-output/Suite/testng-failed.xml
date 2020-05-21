@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="test-group"/>
+        <include name="test-group1"/>
+        <include name="test-group2"/>
+        <include name="test-group3"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.HomePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="allowDialogue"/>
+          <include name="VerifyTagLine"/>
+          <include name="clickLogin"/>
+          <include name="VerifyTagLineText"/>
+          <include name="verifyLogo"/>
+        </methods>
+      </class> <!-- tests.HomePageTest -->
+      <class name="tests.DiscoveryTest">
+        <methods>
+          <include name="setup"/>
+          <include name="doLoginWithEmail"/>
+        </methods>
+      </class> <!-- tests.DiscoveryTest -->
+      <class name="tests.GoogleSignupTest">
+        <methods>
+          <include name="setup"/>
+          <include name="checkValidGoogleLogin"/>
+        </methods>
+      </class> <!-- tests.GoogleSignupTest -->
+      <class name="tests.SignUpTest">
+        <methods>
+          <include name="setup"/>
+          <include name="doSignup"/>
+          <include name="CheckUserRedirection"/>
+          <include name="fillSignupForm"/>
+        </methods>
+      </class> <!-- tests.SignUpTest -->
+      <class name="tests.FbLoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="doFacebookLogin"/>
+        </methods>
+      </class> <!-- tests.FbLoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
